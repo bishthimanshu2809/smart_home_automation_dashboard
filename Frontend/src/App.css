@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  padding: 10px;
+  height: 100vh;
+  color: white;
+}
+
+.tile {
+  background-color: #2b3648;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-empty {
+  background: transparent;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.big-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+.icon {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.tile-datetime {
+  background-color: #3a5068;
+}
+
+.tile-mode {
+  background-color: #3a5068;
+}
+
+.tile-action {
+  background-color: #46536a;
+  align-items: center;
+  text-align: center;
+}
+
+.tile-weather {
+  background-color: #46536a;
+  grid-row: span 2;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.weather-icon {
+  font-size: 1.5rem;
+}
+
+.weather-sub {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin: 6px 0;
+}
+
+.weather-sub-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.tile-light {
+  background-color: #46536a;
+  align-items: center;
+  text-align: center;
+}
+
+.tile-light.light-on {
+  background-color: #4caf50;
+}
+
+.light-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.ctrl-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.ctrl-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.power-value {
+  font-size: 0.85rem;
+  min-width: 45px;
+}
+
+.toggle-btn {
+  border: none;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-btn.on {
+  background-color: #ffffff;
+  color: #4caf50;
+}
+
+.toggle-btn.off {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.tile-room {
+  background-color: #46536a;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-value {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.tile-refresh {
+  background-color: #46536a;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile-refresh .icon {
+  font-size: 1.8rem;
+}
+.tile-refresh {
+  align-items: center;
+  justify-content: center;
+}
